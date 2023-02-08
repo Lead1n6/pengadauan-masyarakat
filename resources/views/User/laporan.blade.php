@@ -68,7 +68,7 @@
                 <form action="{{ route('pekat.store') }}" method="POST" enctype="multipart/form-data">
                     @csrf
                     <div class="form-group">
-                        <textarea name="isi_laporan" placeholder="Masukkan Isi Laporan" class="form-control"
+                        <textarea name="isi_laporan" placeholder="Masukkan Isi Aduan dan Alamat Lengkap Anda" class="form-control"
                             rows="4">{{ old('isi_laporan') }}</textarea>
                     </div>
                     <div class="form-group">

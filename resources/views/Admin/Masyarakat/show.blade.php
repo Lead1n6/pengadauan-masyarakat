@@ -63,7 +63,7 @@
       </div>
    </div>
 
-   {{-- <div class="row pt-5">
+   <div class="row pt-5">
     <div class="col-lg-6 col-12">
        <div class="card">
           <div class="card-header text-light text-center" style="background-color:#6a8afc">
@@ -75,12 +75,19 @@
               <table class="table">
                   <tbody>
                       <tr>
-                       
+                        <th style="font-family: Times New Roman">Pengaduan</th>
+                        <td>:</td>
+                       <td>{{ $pengaduan->isi_laporan}}</td>
                       </tr>
+                      <tr>
+                        <th style="font-family: Times New Roman">Tanggal Pengaduan</th>
+                        <td>:</td>
+                        <td>{{ $pengaduan->tgl_pengaduan }}</td>
+                     </tr>
                   </tbody>
               </table>
           </div>
        </div>
     </div>
- </div> --}}
+ </div>  
 @endsection

@@ -75,7 +75,7 @@
 
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="nav navbar-nav ml-auto">
-                            <a href="{{ route('admin.logout') }}" id="keluar"><i class="bi bi-person-fill-gear "></i> Selamat Datang <b class="text text-danger">{{ Auth::guard('admin')->user()->nama_petugas }}</a></b>
+                            <a href="#" id="keluar"><i class="bi bi-person-fill-gear "></i> Selamat Datang <b class="text text-danger">{{ Auth::guard('admin')->user()->nama_petugas }}</a></b>
                         </ul>
                     </div>
                 </div>

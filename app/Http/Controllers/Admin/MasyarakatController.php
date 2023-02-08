@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use App\Models\Masyarakat;
+use App\Models\Pengaduan;
 use Illuminate\Http\Request;
 
 class MasyarakatController extends Controller
@@ -19,7 +20,9 @@ class MasyarakatController extends Controller
     {
         $masyarakat = Masyarakat::where('nik', $nik)->first();
 
-        return view('Admin.Masyarakat.show', ['masyarakat' => $masyarakat]);
+        $pengaduan = Pengaduan::where('nik', $nik)->first();
+
+        return view('Admin.Masyarakat.show', ['masyarakat' => $masyarakat, 'pengaduan'=> $pengaduan]);
     }
 
 }
