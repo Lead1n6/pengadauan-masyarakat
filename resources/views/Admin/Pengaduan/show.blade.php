@@ -68,7 +68,7 @@
                             <td>:</td>
                             <td>
                                 @if ($pengaduan->status == '0')
-                                    <a href="#" class="badge badge-danger">Pending</a>
+                                    <a href="#" class="badge badge-danger">Konfirmasi</a>
                                 @elseif($pengaduan->status == 'proses')
                                     <a href="#" class="badge badge-warning text-white">Proses</a>
                                 @else
