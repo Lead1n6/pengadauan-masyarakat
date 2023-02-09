@@ -100,7 +100,7 @@ http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></scr
                                 <span class="direct-chat-name float-right text-primary"><b>Petugas</b></span>
                                 <span class="direct-chat-timestamp float-left"></span>
                             </div>
-                            <div class="direct-chat-text pt-2" style="background:rgb(255, 255, 255)  ">
+                            <div class="direct-chat-text pt-2" style="background:rgb(255, 255, 255);font-family: Times New Roman">
                             {{$dpt->tanggapan}}
                             </div>
                         </div>

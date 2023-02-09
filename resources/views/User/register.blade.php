@@ -21,11 +21,16 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-lg-5">
-            <h2 class="text-center text-white mb-0 mt-5">SUARKAT</h2>
-            <P class="text-center text-white mb-5">Suara Masyarakat</P>
+            <div class="item" style="padding-top: 90px;">
+                <div class="text-center">
+                    <img src="assets/images/logos.png" alt="pink" style="border-radius: 55%;" width="130px" >
+                </div>
+              </div>
+            <h2 class="text-center text-white mb-0 mt-6 pt-1" style="font-family:Times New Roman"><b>SUARKAT</b></h2>
+            <P class="text-center text-white mb-6">Suara Masyarakat</P>
             <div class="card mt-5">
                 <div class="card-body">
-                    <h2 class="text-center mb-5">FORM DAFTAR</h2>
+                    <h2 class="text-center mb-5" style="font-family:Times New Roman">FORM DAFTAR</h2>
                     <form action="{{ route('pekat.register') }}" method="POST">
                         @csrf
                         <div class="form-group">
