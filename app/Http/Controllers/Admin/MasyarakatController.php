@@ -6,6 +6,8 @@ use App\Http\Controllers\Controller;
 use App\Models\Masyarakat;
 use App\Models\Pengaduan;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Facades\Hash;
 
 class MasyarakatController extends Controller
 {
@@ -24,5 +26,14 @@ class MasyarakatController extends Controller
 
         return view('Admin.Masyarakat.show', ['masyarakat' => $masyarakat, 'pengaduan'=> $pengaduan]);
     }
+
+    // public function destroy($nik)
+    // {
+    //     $masyarakat = Masyarakat::findOrFail($nik);
+
+    //     $masyarakat->delete();
+
+    //     return redirect()->route('masyarakat.index')->with('succes', 'Data Behasil Dihapus');
+    // }
 
 }

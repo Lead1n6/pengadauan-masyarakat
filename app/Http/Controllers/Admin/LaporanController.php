@@ -5,14 +5,17 @@ use Carbon\Carbon;
 use App\Http\Controllers\Controller;
 use App\Models\Pengaduan;
 use Illuminate\Http\Request;
+use App\Exports\LaporanExport;
+use Maatwebsite\Excel\Facades\Excel;
 use PDF;
 
 class LaporanController extends Controller
 {
     public function index()
     {
-       
+
         return view('Admin.Laporan.index');
+        
     }
 
     public function getLaporan(Request $request)
@@ -31,6 +34,15 @@ class LaporanController extends Controller
         $pengaduan = Pengaduan::whereBetween('tgl_pengaduan', [$from,$to])->get();
 
         $pdf = PDF::loadView('Admin.Laporan.cetak',['pengaduan' => $pengaduan]);
+
         return $pdf->download('Laporan-pengaduan.pdf');
     }
+
+    public function exportExcel($from,$to)
+    {
+        $pengaduan = Pengaduan::whereBetween('tgl_pengaduan',[$from,$to])->get();
+
+        return Excel::download(new LaporanExport(["pengaduan"=>$pengaduan]), 'Laporan-pengaduan.xlsx');
+    }
+
 }

@@ -81,26 +81,26 @@
         <div class="col-lg-4 col-md-12 col-sm-12 col-12 col">
             <div class="content content-bottom shadow">
                 <div>
-                    <img src="{{ asset('images/user_default.svg') }}" alt="user profile" class="photo">
-                    <div class="self-align">
-                        <h5><a style="color: #6a70fc" href="#">{{ Auth::guard('masyarakat')->user()->nama }}</a></h5>
-                        <p class="text-dark">{{ Auth::guard('masyarakat')->user()->username }}</p>
-                    </div>
-                    <div class="row text-center">
+                    {{-- <img src="{{ asset('images/user_default.svg') }}" alt="user profile" class="photo"> --}}
+                    <center><div class="self-align">
+                        <h5><a style="color: #282a52" href="#">User : {{ Auth::guard('masyarakat')->user()->nama }}</a></h5>
+                        {{-- <p class="text-dark">{{ Auth::guard('masyarakat')->user()->username }}</p> --}}
+                    </div></center>
+                    <div class="row text-center pt-2">
                         <div class="col">
-                            <p class="italic mb-0">Terverifikasi</p>
+                            <p class="italic mb-0"><b style="color: #ff0000">Terverifikasi</b></p>
                             <div class="text-center">
                                 {{ $hitung[0] }}
                             </div>
                         </div>
                         <div class="col">
-                            <p class="italic mb-0">Proses</p>
+                            <p class="italic mb-0"><b style="color:#ffcc00">Proses</b></p>
                             <div class="text-center">
                                 {{ $hitung[1] }}
                             </div>
                         </div>
                         <div class="col">
-                            <p class="italic mb-0">Selesai</p>
+                            <p class="italic mb-0"><b style="color :#359415">Selesai</b></p>
                             <div class="text-center">
                                 {{ $hitung[2] }}
                             </div>
@@ -129,11 +129,11 @@
                     <div>
                         <p>{{ $v->user->nama }}</p>
                         @if ($v->status == '0')
-                        <p class="text-danger">Pending</p>
+                        <p class="text-danger"><b>Konfirmasi</b></p>
                         @elseif($v->status == 'proses')
-                        <p class="text-warning">{{ ucwords($v->status) }}</p>
+                        <p class="text-warning"><b>{{ ucwords($v->status) }}</b></p>
                         @else
-                        <p class="text-success">{{ ucwords($v->status) }}</p>
+                        <p class="text-success"><b>{{ ucwords($v->status) }}</b></p>
                         @endif
                     </div>
                     <div>

@@ -62,6 +62,14 @@
          </div>
       </div>
    </div>
+   <br>
+   {{-- @csrf
+   <a href="{{ route('masyarakat.delete', $masyarakat->nik)}}" class="btn btn-danger pt-2">Delete Data</a>
+   @method('DELETE') --}}
+   
+    {{-- <form action="{{ route('masyarakat.destroy', $masyarakat->nik)}}" method="POST">
+    <button type="submit" class="btn btn-danger mt-2" style="width: 49%">HAPUS</button>
+ </form>  --}}
 
    <div class="row pt-5">
     <div class="col-lg-6 col-12">

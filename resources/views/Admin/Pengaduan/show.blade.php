@@ -76,14 +76,21 @@
                                 @endif    
                             </td>
                         </tr>
-                        <tr>
-
-                        </tr>
                    </tbody>
                 </table>
+                
+
+                <center><form action="{{ route('pengaduan.destroy', $pengaduan->id_pengaduan)}}" method="POST">
+                    @csrf
+                    @method('DELETE')
+                <button type="submit" class="btn btn-danger"><b style="font-family: Times New Roman">Hapus Laporan Yang Diadu</b></button>
+                 </form></center>
+
+
              </div>
         </div>
      </div>
+     
         <div class="col-lg-6 col-12">
            <div class="card shadow">
               <div class="card-header text-light" style="background-color:#6a8afc">

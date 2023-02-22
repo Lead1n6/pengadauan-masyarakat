@@ -23,7 +23,7 @@ class CreatePengaduansTable extends Migration
 
             $table->timestamps();
 
-            $table->foreign('nik')->references('nik')->on('masyarakat');
+            $table->foreign('nik')->references('nik')->on('masyarakat')->onCascade("delete");
         });
     }
 

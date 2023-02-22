@@ -52,6 +52,7 @@ Route::prefix('admin')->group(function () {
       Route::get('laporan', [LaporanController::class, 'index'])->name('laporan.index');
       Route::post('getLaporan', [LaporanController::class, 'getLaporan'])->name('laporan.getLaporan');
       Route::get('laporan/cetak/{from}/{to}', [LaporanController::class, 'cetaklaporan'])->name('laporan.cetakLaporan');
+      Route::get('/exportExcel/cetak/{from}/{to}', [LaporanController::class, 'exportExcel'])->name('laporan.exportExcel');
    });
 
    Route::middleware(['isPetugas'])->group(function (){

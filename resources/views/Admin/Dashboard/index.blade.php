@@ -61,7 +61,6 @@
       </div>
     </div>
   </div>
-
   <script>
     var ctx = document.getElementById("myChart").getContext('2d');
     var myChart = new Chart(ctx, {
@@ -69,7 +68,7 @@
       data: {
           labels: ["{{ $petugas }} Petugas", "{{ $masyarakat }} Masyarakat", "{{ $proses }} Proses", "{{ $selesai }} Selesai",],
           datasets: [{
-              label: 'pengguna',
+              label: 'Petugas',
               data: [{{ $petugas }}, {{ $masyarakat }},  {{ $proses }},  {{ $selesai }}],
               backgroundColor: [
                   'rgba(255, 99, 132)',

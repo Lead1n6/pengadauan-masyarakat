@@ -12,7 +12,7 @@
          <tr>
             <th>No</th>
             <th>Tanggal</th>
-            <th>Isi Laporan</th>
+            <th>Isi Laporan & Lokasi Kejadian</th>
             <th>Status</th>
             <th>Detail</th>
          </tr>
@@ -32,7 +32,7 @@
                    <a href="#" class="badge badge-primary">Selesai</a>      
                 @endif
             </td>
-            <td><a href="{{ route('pengaduan.show', $v->id_pengaduan) }}" style="text-decoration:underline">Lihat</a></td>
+            <td><a href="{{ route('pengaduan.show', $v->id_pengaduan) }}" style="text-decoration:underline" class="badge badge-success">Lihat</a></td>
          </tr>   
          @endforeach
        </tbody>

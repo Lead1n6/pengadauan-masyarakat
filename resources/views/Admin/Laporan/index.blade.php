@@ -30,11 +30,21 @@
         <div class="col-lg-8 col-12">
             <div class="card-header text-center" style="background-color:#fdfdfd">
                 <b>Data Berdasarkan Tanggal</b>
+
+                  {{-- btn export exel--}}
                 <div class="float-right">
                     @if ($pengaduan ?? '')
                         <a href="{{ route('laporan.cetakLaporan', ['from' => $from, 'to' => $to])}}" class="btn btn-danger">EXPORT PDF</a>
                     @endif
                 </div>
+                      
+                {{-- btn export exel--}}
+                <div class="float-right">
+                    @if ($pengaduan ?? '')
+                        <a href="{{ route('laporan.exportExcel', ['from' => $from, 'to' => $to])}}" class="btn btn-success">EXPORT EXCEL</a>
+                    @endif
+                </div>
+                
             </div>
             <div class="card-body">
                 @if ($pengaduan ?? '')
@@ -55,7 +65,7 @@
                                 <td>{{ $v->isi_laporan}}</td>
                                 <td>
                                  @if ($v->status == '0')
-                                    <a href="#" class="badge badge-danger">Pending</a>
+                                    <a href="#" class="badge badge-danger">Konfirmasi</a>
                                  @elseif($v->status == 'proses')
                                     <a href="#" class="badge badge-warning text-white">Proses</a>
                                  @else

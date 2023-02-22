@@ -26,7 +26,7 @@ class Pengaduan extends Model
     
     public function user()
     {
-        return $this->hasOne(Masyarakat::class, 'nik','nik');
+        return $this->belongsTo(Masyarakat::class, 'nik','nik');
     }
 
     public function tanggapan(){

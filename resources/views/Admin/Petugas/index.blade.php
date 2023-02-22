@@ -27,7 +27,7 @@
                 <td>{{ $v->username }}</td>
                 <td>{{ $v->telp }}</td>
                 <td>{{ $v->level }}</td>
-                <td><a href="{{ route('petugas.edit', $v->id_petugas) }}" style="text-decoration: underline">Lihat</a></td>
+                <td><a href="{{ route('petugas.edit', $v->id_petugas) }}" style="text-decoration: underline" class="badge badge-success">Lihat</a></td>
             </tr>
             @endforeach
         </tbody>

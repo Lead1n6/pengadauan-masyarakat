@@ -26,6 +26,15 @@ class PengaduanController extends Controller
         return view('Admin.Pengaduan.show', ['pengaduan' => $pengaduan, 'tanggapan' => $tanggapan]);
         
     }
+
+    public function destroy($id_pengaduan)
+    {
+        $pengaduan = Pengaduan::find($id_pengaduan);
+
+        $pengaduan->delete();
+
+        return redirect()->route('pengaduan.index');
+    }
     
 
 }
