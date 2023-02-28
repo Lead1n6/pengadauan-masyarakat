@@ -4,6 +4,7 @@
 
 @section('header', 'Laporan Pengaduan')
 
+
 @section('content')
     <div class="row">
         <div class="col-lg-4 col-12">
@@ -84,4 +85,25 @@
             </div>
         </div>
     </div>
+    <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+<br>
+  <footer class="text-black text-center p-5"  style="background-color: #ffffff;">
+    <p>Created with love <i class="bi bi-hearts text-danger"></i><a href="https://www.instagram.com/louisdessry/" class="text-black fw-bold">Louis Desiriyanti</a></p>
+</footer>
 @endsection

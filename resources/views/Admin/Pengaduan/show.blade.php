@@ -78,8 +78,8 @@
                         </tr>
                    </tbody>
                 </table>
-                
 
+                
                 <center><form action="{{ route('pengaduan.destroy', $pengaduan->id_pengaduan)}}" method="POST">
                     @csrf
                     @method('DELETE')

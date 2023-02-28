@@ -173,14 +173,15 @@ https://templatemo.com/tm-558-klassy-cafe
     <!-- ***** About Area Ends ***** -->
 
     <!-- ***** Menu Area Starts ***** -->
-    <section class="section" id="menu" style="background: #c9d3ff">
-        <div class="row text-center mb-3">
+    <section class="section" id="menu" style="background: #4c69ed ">
+        <div class="row text-center mb-3" style="color:#ffffff">
             <div class="col">
             <b><h2>Prosedur</h2></b>
             <br>
-            <p class="lead">Suara masyarakat adalah aplikasi pengelola pengaduan terhadap masyarakat memberitahukan sebuah kejadian atau meminta bantuan.</p>
+            <b><p class="lead"  style="font-family: Times New Roman"><h6>Suara masyarakat adalah aplikasi pengelola pengaduan terhadap masyarakat memberitahukan sebuah kejadian atau meminta bantuan.</h6></p></b>
            </div>
        </div>
+
         <div class="container text-center">
             <div class="row">
                 <div class="col-sm-6 mb-3 mb-sm-0">
@@ -189,7 +190,7 @@ https://templatemo.com/tm-558-klassy-cafe
                       <h5 class="card-title">Daftar/Masuk</h5>
                       <p class="card-text"><b>1.</b> Daftar terlebih dahulu sebelum melakukan pengaduan. Setelah mendaftar, Login untuk menulis pengaduan anda di halaman Suarkat (Suara Masyarakat)</p>
                       <div class="col-2">
-                        <img src="assets/images/c.png" alt="m"  >
+                        <img src="assets/images/c.png" alt="m">
                     </div>
                     </div>
                   </div>
@@ -198,7 +199,7 @@ https://templatemo.com/tm-558-klassy-cafe
                   <div class="card">
                     <div class="card-body">
                       <h5 class="card-title">Tulis Pengaduan</h5>
-                      <p class="card-text"><b>2.</b> Tulis pengaduan yang sesuai dengan masalah yang anda alami atau yang anda temukan dan sertakan bukti foto tentang kejadian yang terjadi.</p>
+                      <p class="card-text"><b>2.</b>Tulis pengaduan yang sesuai dengan masalah yang anda alami atau yang anda temukan dan sertakan bukti foto tentang kejadian yang terjadi.</p>
                       <div class="col-2">
                         <img src="assets/images/a.png" alt="m">
                     </div>
@@ -248,7 +249,7 @@ https://templatemo.com/tm-558-klassy-cafe
                   <div class="card">
                     <div class="card-body">
                       <h5 class="card-title">Selesai</h5>
-                      <p class="card-text"><b>6.</b> Anda bisa melihat tanggapan atau status pengaduan anda di halaman branda anda.</p>
+                      <p class="card-text"><b>6.</b> Anda bisa melihat tanggapan di akun anda. Jika akun anda tidak berarti kami hapus di karenakan laporan palsu. </p>
                       <div class="col-2">
                         <img src="assets/images/aaa.png" alt="m">
                     </div>
@@ -256,6 +257,8 @@ https://templatemo.com/tm-558-klassy-cafe
                   </div>
                 </div>
               </div>
+
+            
     </section>
     <!-- ***** Menu Area Ends ***** -->
     

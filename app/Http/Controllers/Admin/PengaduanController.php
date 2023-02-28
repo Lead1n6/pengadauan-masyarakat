@@ -31,6 +31,8 @@ class PengaduanController extends Controller
     {
         $pengaduan = Pengaduan::find($id_pengaduan);
 
+        $pengaduan->tanggapan()->delete();
+
         $pengaduan->delete();
 
         return redirect()->route('pengaduan.index');

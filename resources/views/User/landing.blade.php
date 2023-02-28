@@ -69,17 +69,17 @@ http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></scr
 </section>
 
 <div class="row justify-content-center">
-    <div class="col-lg-5 col-5 col">
+    <div class="col-lg-6 col-6 col">
         <div class="content shadow" >
+           
             <div class="card-header" style="background-color: #4c69ed;">
                 <div style="color:#FAFAFC">
                     <center><h6 class="fas fa-comments"><b>       
-                     -- Contoh Laporan Yang Diaduakan --</b></h6></center>
+                     Contoh Laporan Yang Diaduakan</b></h6></center>
                 </div>
             </div>
-
-            <div class="card-body" style="background-color:#e6e3f3 ">
-                <div style = "width: 790px; height: 400px; overflow:scroll;">
+            
+            
                 <div class="direct-chat-messages" >
                 @foreach ($pengaduan as $dp)
                     
@@ -88,7 +88,7 @@ http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></scr
                             <span class="direct-chat-name float-left text-danger"><b>Masyarakat</b></span>
                             <span class="direct-chat-timestamp float-right"></span>
                         </div>
-                        <div class="direct-chat-text pt-2" style="background: rgb(149, 174, 245) ">
+                        <div class="direct-chat-text pt-2" style="background: rgb(136, 164, 241); font-family: Times New Roman">
                             <p align="right">
                                 {{$dp->isi_laporan}}</p>
                         </div>
@@ -100,7 +100,7 @@ http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></scr
                                 <span class="direct-chat-name float-right text-primary"><b>Petugas</b></span>
                                 <span class="direct-chat-timestamp float-left"></span>
                             </div>
-                            <div class="direct-chat-text pt-2" style="background:rgb(255, 255, 255);font-family: Times New Roman">
+                            <div class="direct-chat-text pt-2" style="background:rgb(151, 164, 212);font-family: Times New Roman">
                             {{$dpt->tanggapan}}
                             </div>
                         </div>
@@ -110,9 +110,11 @@ http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></scr
                 </div>
                 </div>
             </div>
+                
         </div>
     </div>
 </div> 
+
 
 {{-- Ini yang asli --}}
 {{--<div class="row justify-content-center">
@@ -157,14 +159,11 @@ http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></scr
     </div>--}}
 {{-- Footer --}}
 
-
-<div class="mt-5">
-    <hr>
-    <div class="text-center pt-5">
-        <p>Created with love <i class="bi bi-hearts text-danger"></i><a href="https://www.instagram.com/louisdessry/?next=%2F" class="text-black fw-bold">Louis Desiriyanti</a></p>
-    </div>
+<div class="text-center pt-5">
+<footer>
+    <p>Created with love <i class="bi bi-hearts text-danger"></i><a href="https://www.instagram.com/louisdessry/?next=%2F"  class="text-black fw-bold">Louis Desiriyanti</a></p>
+</footer> 
 </div>
-
 
 {{-- Modal --}}
 <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
