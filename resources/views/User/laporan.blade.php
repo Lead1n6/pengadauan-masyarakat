@@ -64,7 +64,7 @@
                 @if (Session::has('pengaduan'))
                 <div class="alert alert-{{ Session::get('type') }}">{{ Session::get('pengaduan') }}</div>
                 @endif
-                <div class="card mb-3 shadow">Tulis Laporan Disini</div>
+                <div class="card mb-3 shadow">Tulis Laporan Aduan Disini</div>
                 <form action="{{ route('pekat.store') }}" method="POST" enctype="multipart/form-data">
                     @csrf
                     <div class="form-group">
@@ -129,7 +129,7 @@
                     <div>
                         <p>{{ $v->user->nama }}</p>
                         @if ($v->status == '0')
-                        <p class="text-danger"><b>Konfirmasi</b></p>
+                        <p class="text-danger"><b>Terverifikasi</b></p>
                         @elseif($v->status == 'proses')
                         <p class="text-warning"><b>{{ ucwords($v->status) }}</b></p>
                         @else

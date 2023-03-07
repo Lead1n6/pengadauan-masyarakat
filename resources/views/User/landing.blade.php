@@ -59,7 +59,7 @@ http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></scr
     </nav>
     <div class="text-center pt-5">
         <b><h2 class="medium text-white mt-3">Layanan Pengaduan Masyarakat</h2>
-        <p class="italic text-white mb-5">Sampaikan laporan Anda langsung kepada yang pemerintah berwenang</p></b>
+        <p class="italic text-white mb-5">Sampaikan laporan Anda langsung kepada petugas pemerintah yang berlangsung</p></b>
     </div>
 
     <div class="wave wave1"></div>
@@ -100,7 +100,7 @@ http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></scr
                                 <span class="direct-chat-name float-right text-primary"><b>Petugas</b></span>
                                 <span class="direct-chat-timestamp float-left"></span>
                             </div>
-                            <div class="direct-chat-text pt-2" style="background:rgb(151, 164, 212);font-family: Times New Roman">
+                            <div class="direct-chat-text pt-2" style="background:rgb(169, 141, 239);font-family: Times New Roman">
                             {{$dpt->tanggapan}}
                             </div>
                         </div>

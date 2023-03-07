@@ -53,7 +53,7 @@
                     <a href="{{ route('laporan.index')}}"><b style="font-family: Times New Roman"><i class="bi bi-clipboard-data"></i>   Laporan</a></b>
                 </li>
                 <li class="logoutt">
-                    <a href="{{ route('admin.logout') }}"><b style="font-family: Times New Roman"><i class="bi bi-box-arrow-left"></i>    Laporan</a></b>
+                    <a href="{{ route('admin.logout') }}"><b style="font-family: Times New Roman"><i class="bi bi-box-arrow-left"></i>   Keluar</a></b>
                 </li>
             </ul>
         </nav>
