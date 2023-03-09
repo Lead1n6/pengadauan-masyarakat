@@ -85,23 +85,23 @@ http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></scr
                     
                     <div class="direct-chat-msg">
                         <div class="direct-chat-infos clearfix">
-                            <span class="direct-chat-name float-left text-danger"><b>Masyarakat</b></span>
+                            <span class="direct-chat-name float-left"><b>Masyarakat</b></span>
                             <span class="direct-chat-timestamp float-right"></span>
                         </div>
-                        <div class="direct-chat-text pt-2" style="background: rgb(136, 164, 241); font-family: Times New Roman">
-                            <p align="right">
-                                {{$dp->isi_laporan}}</p>
+                        <div class="direct-chat-text pt-2" style="background: rgb(169, 37, 245); font-family: Times New Roman">
+                            <p align="right-text" style="color:#ffffff" >
+                                <b>{{$dp->isi_laporan}}</p></b>
                         </div>
                     </div>
                     @if($dp->tanggapan != null)
                     @foreach($dp->tanggapan as $dpt)
                         <div class="direct-chat-msg right">
                             <div class="direct-chat-infos clearfix">
-                                <span class="direct-chat-name float-right text-primary"><b>Petugas</b></span>
+                                <span class="direct-chat-name float-right"><b>PETUGAS</b></span>
                                 <span class="direct-chat-timestamp float-left"></span>
                             </div>
-                            <div class="direct-chat-text pt-2" style="background:rgb(169, 141, 239);font-family: Times New Roman">
-                            {{$dpt->tanggapan}}
+                            <div class="direct-chat-text pt-2" style="background:rgb(39, 214, 0);font-family: Times New Roman;color:#ffffff">
+                            <b>{{$dpt->tanggapan}}
                             </div>
                         </div>
                         @endforeach
@@ -109,8 +109,19 @@ http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></scr
                   @endforeach
                 </div>
                 </div>
+                <p style="padding-top: 6px">Keterangan Warna Obrolan Aduan Laporan : </p>
+                <div class="card" style="max-width: 20rem;">
+                    <div class="card-body" style="background:rgb(39, 214, 0)">
+                      <h5 class="card-title" style="color:#ffffff ;font-family: Times New Roman"><b>PETUGAS</b></h5>
+                    </div>
+                  </div>
+                  <div class="card" style="max-width: 20rem;">
+                    <div class="card-body" style="background:rgb(169, 37, 245)">
+                      <h5 class="card-title" style="color:#ffffff ;font-family: Times New Roman"><b>MASYARAKAT</b></h5>
+                    </div>
+                  </div>
             </div>
-                
+
         </div>
     </div>
 </div> 
