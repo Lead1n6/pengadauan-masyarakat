@@ -249,7 +249,7 @@ https://templatemo.com/tm-558-klassy-cafe
                   <div class="card">
                     <div class="card-body">
                       <h5 class="card-title">Selesai</h5>
-                      <p class="card-text"><b>6.</b> Anda bisa melihat tanggapan di akun anda. Jika akun anda tidak berarti kami hapus di karenakan laporan palsu. </p>
+                      <p class="card-text"><b>6.</b> Anda bisa melihat tanggapan di akun anda. Jika laporan anda tidak berarti kami hapus di karenakan laporan palsu. </p>
                       <div class="col-2">
                         <img src="assets/images/aaa.png" alt="m">
                     </div>
